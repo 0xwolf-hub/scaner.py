@@ -7,14 +7,14 @@ import threading
 import requests
 from concurrent.futures import ThreadPoolExecutor
 
-# إعدادات المظهر
+
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue")
 
-# إعداد Webhook لـ Discord
+
 DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1372000702859182151/XZffCLethzOTgkzu9nwyDe8fH-ubQa6INxB53M-_WdxNomUEjeA716z3tgK9g3G5SfXF"  # ← 🔁 ضع رابط Webhook الخاص بك هنا
 
-# إرسال البيانات إلى Discord
+
 def send_to_discord(webhook_url, message):
     data = {"content": message}
     try:
